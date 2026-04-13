@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Small Brand Market</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom Colours -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brandBg: "#FEF6F3",
+            brandLight: "#D8B58B",
+            brandDark: "#75744C",
+            brandPrimary: "#C88056",
+            brandSecondary: "#B57048",
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-brandBg">
+
+  <!-- HEADER -->
+  <header class="brandBg">
+    <div class="mx-auto flex h-16 max-w-7xl items-center gap-8 px-4 sm:px-6 lg:px-8">
+      
+      <!-- LOGO -->
+      <a class="block text-brandPrimary" href="#">
+        <span class="sr-only">Home</span>
+        <img src="logo.png" class="h-16">
+      </a>
+
+      <div class="flex flex-1 items-center justify-end md:justify-between">
+        <nav aria-label="Global" class="hidden md:block">
+          <!-- <ul class="flex items-center gap-6 text-sm">
+            <li><a class="text-brandDark hover:text-brandPrimary" href="#">About</a></li>
+            <li><a class="text-brandDark hover:text-brandPrimary" href="#">Careers</a></li>
+            <li><a class="text-brandDark hover:text-brandPrimary" href="#">History</a></li>
+            <li><a class="text-brandDark hover:text-brandPrimary" href="#">Services</a></li>
+            <li><a class="text-brandDark hover:text-brandPrimary" href="#">Projects</a></li>
+            <li><a class="text-brandDark hover:text-brandPrimary" href="#">Blog</a></li>
+          </ul> -->
+        </nav>
+
+        <div class="flex items-center gap-4">
+          <a class="rounded-md bg-brandPrimary px-5 py-2.5 text-white" href="#">Login</a>
+          <a class="hidden sm:block rounded-md bg-brandPrimary px-5 py-2.5 text-white" href="#">Join</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRODUCT GRID -->
+<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- CARD -->
+    <a href="https://paystack.com/buy/the-chilli-lovers-tbwxww" class="relative block rounded-se-3xl border border-brandLight">
+      <span class="absolute -top-px -right-px rounded-se-3xl rounded-es-3xl bg-brandPrimary px-6 py-4 font-medium tracking-widest text-white uppercase">
+        Save 10%
+      </span>
+      <img src="./Img/Gourmet chilli products on rustic display.png" class="h-80 w-full rounded-se-3xl object-cover">
+      <div class="p-4 text-center">
+        <strong class="text-xl font-medium text-brandDark"> The Chilli Lover’s </strong>
+        <p class="mt-2 text-brandDark">Turn up the heat with Firecraft’s signature chilli collection. This hamper is built for people who love bold flavour — from smoky and rich to seriously spicy.</p>
+        <span class="mt-4 block rounded-md border border-brandSecondary bg-brandSecondary px-5 py-3 text-white uppercase">
+          Buy now (R329)
+        </span>
+      </div>
+    </a>
+
+    <!-- Repeat same pattern for all cards -->
+    
+    <!-- CARD -->
+    <a href="https://paystack.com/buy/the-coffee-ritual-box-xhqtaz" class="relative block rounded-se-3xl border border-brandLight">
+      <img src="./Img/Coffee lovers' ritual essentials.png" class="h-80 w-full rounded-se-3xl object-cover">
+      <div class="p-4 text-center">
+        <strong class="text-xl font-medium text-brandDark"> The Coffee Ritual Box </strong>
+        <p class="mt-2 text-brandDark">Everything you need to elevate your daily coffee ritual. Grounded Brew Co. brings together their most-loved coffee essentials into one beautifully curated box.</p>
+        <span class="mt-4 block rounded-md bg-brandSecondary px-5 py-3 text-white uppercase">
+          Buy now (R349)
+        </span>
+      </div>
+    </a>
+
+        <!-- CARD -->
+    <a href="https://paystack.com/buy/the-natural-skincare-set-mxertk" class="relative block rounded-se-3xl border border-brandLight">
+      <img src="./Img/Natural skincare essentials on rustic wood.png" class="h-80 w-full rounded-se-3xl object-cover">
+      <div class="p-4 text-center">
+        <strong class="text-xl font-medium text-brandDark"> The Natural Skincare Set </strong>
+        <p class="mt-2 text-brandDark">Simple, natural skincare that actually works. Pure Glow Essentials focuses on clean ingredients and gentle formulations — perfect for everyday use.</p>
+        <span class="mt-4 block rounded-md bg-brandSecondary px-5 py-3 text-white uppercase">
+          Buy now (R299)
+        </span>
+      </div>
+    </a>
+
+            <!-- CARD -->
+    <a href="https://paystack.com/buy/the-sweet-treats-box-bpojqa" class="relative block rounded-se-3xl border border-brandLight">
+      <img src="./Img/Delicious treats from Golden Crumb Bakery.png" class="h-80 w-full rounded-se-3xl object-cover">
+      <div class="p-4 text-center">
+        <strong class="text-xl font-medium text-brandDark"> The Sweet Treats Box </strong>
+        <p class="mt-2 text-brandDark">Freshly baked treats made to comfort and delight. Golden Crumb Bakery focuses on rich flavours and handmade quality — perfect for gifting or enjoying slowly.</p>
+        <span class="mt-4 block rounded-md bg-brandSecondary px-5 py-3 text-white uppercase">
+          Buy now (R279)
+        </span>
+      </div>
+    </a>
+
+            <!-- CARD -->
+    <a href="https://paystack.com/buy/the-candle--calm-set-gaoiea" class="relative block rounded-se-3xl border border-brandLight">
+      <img src="./Img/Cedarwood and vanilla candle collection.png" class="h-80 w-full rounded-se-3xl object-cover">
+      <div class="p-4 text-center">
+        <strong class="text-xl font-medium text-brandDark"> The Candle & Calm Set </strong>
+        <p class="mt-2 text-brandDark">Calm, minimal scents designed to help you unwind. Ember & Oak focuses on natural ingredients and soft fragrances — perfect for creating a relaxed space.</p>
+        <span class="mt-4 block rounded-md bg-brandSecondary px-5 py-3 text-white uppercase">
+          Buy now (R319)
+        </span>
+      </div>
+    </a>
+
+            <!-- CARD -->
+    <a href="https://paystack.com/buy/the-fitness-fuel-pack-aexfoa" class="relative block rounded-se-3xl border border-brandLight">
+      <img src="./Img/Fitness fuel snack essentials.png" class="h-80 w-full rounded-se-3xl object-cover">
+      <div class="p-4 text-center">
+        <strong class="text-xl font-medium text-brandDark"> The Fitness Fuel Pack </strong>
+        <p class="mt-2 text-brandDark">Clean, simple fuel to support an active lifestyle. Peak Fuel Co. focuses on quality ingredients and balanced nutrition — perfect for energy on the go.</p>
+        <span class="mt-4 block rounded-md bg-brandSecondary px-5 py-3 text-white uppercase">
+          Buy now (R359)
+        </span>
+      </div>
+    </a>
+
+
+
+    
+
+    <!-- ROW 2 -->
+
+    <!-- Repeat same cards (unchanged structure, just colours already applied) -->
+
+  </div>
+</section>
+
+<!-- LOGO GRID -->
+<div class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-2 gap-px overflow-hidden rounded-lg *:bg-brandLight md:grid-cols-4">
+    
+    <!-- Keep your SVGs exactly as-is -->
+
+  </div>
+</div>
+
+</body>
+</html>
